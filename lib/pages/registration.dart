@@ -5,15 +5,40 @@ class Registration extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        title: 'Jit',
-        home: Scaffold(
-          appBar: AppBar(
-            title: const Text('Welcome to Jit'),
-          ),
-          body: const Center(
-            child: Text('Hello World'),
-          ),
-        ));
+    return Scaffold(
+      body: Container(
+        width: double.infinity,
+        height: double.infinity,
+        child: Column(
+          children: <Widget>[
+            Container(
+              height: 100,
+              color: Colors.amber[600],
+            ),
+            Container(
+              height: 100,
+              width: 220,
+              color: Colors.orange[500],
+              child: null,
+            ),
+            Container(
+              height: 60,
+              color: Colors.grey,
+            ),
+            Container(
+              width: 350,
+              child: const TextField(
+                obscureText: true,
+                decoration: InputDecoration(
+                    border: OutlineInputBorder(), labelText: 'Email'),
+              ),
+            ),
+            Container(
+              height: 350,
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }
