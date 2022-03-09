@@ -34,8 +34,12 @@ class Registration extends StatelessWidget {
               ),
             ),
             Container(
-              height: 350,
-            ),
+                height: 350,
+                child: const TextField(
+                  obscureText: true,
+                  decoration: InputDecoration(
+                      border: OutlineInputBorder(), labelText: ""),
+                )),
           ],
         ),
       ),
