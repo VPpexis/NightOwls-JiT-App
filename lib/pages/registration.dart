@@ -6,7 +6,7 @@ class Registration extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
+      body: SizedBox(
         width: double.infinity,
         height: double.infinity,
         child: Column(
@@ -25,17 +25,17 @@ class Registration extends StatelessWidget {
               height: 60,
               color: Colors.grey,
             ),
-            Container(
+            const SizedBox(
               width: 350,
-              child: const TextField(
+              child: TextField(
                 obscureText: true,
                 decoration: InputDecoration(
                     border: OutlineInputBorder(), labelText: 'Email'),
               ),
             ),
-            Container(
+            const SizedBox(
                 height: 350,
-                child: const TextField(
+                child: TextField(
                   obscureText: true,
                   decoration: InputDecoration(
                       border: OutlineInputBorder(), labelText: ""),
